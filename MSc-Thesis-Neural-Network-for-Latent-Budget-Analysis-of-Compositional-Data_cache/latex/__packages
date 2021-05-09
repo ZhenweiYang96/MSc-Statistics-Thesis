@@ -1,0 +1,15 @@
+base
+MASS
+numDeriv
+alabama
+plotrix
+scatterplot3d
+rgl
+lba
+lbann
+knitr
+kableExtra
+keras
+tensorflow
+ggplot2
+rmarkdown
