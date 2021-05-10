@@ -110,7 +110,7 @@ The corresponding qualitative evaluation of LBA-NN is shown in an importance plo
 \label{fig:bipex3}}
 \end{figure}
 
-Apart from the qualitative evaluation, both models were implemented on the test dataset to compare their predictive abilities. The confusion matrices of the predictions from both models are shown in Figure \ref{fig:S3}. Both LBA and LBA-NN failed to predict causes other than solid or liquid matter and hanging, strangling or suffocation. The quantitative indicators are summarized in Table 8. Both models show similar performance in prediction. 
+Apart from the qualitative evaluation, both models were implemented on the test dataset to compare their predictive abilities. The confusion matrices of the predictions from both models are shown in Figure \ref{fig:S3}. Both LBA and LBA-NN failed to predict causes other than solid or liquid matter and hanging, strangling or suffocation. The quantitative indicators are summarized in Table 8. Both models show similar performance in prediction. Both models have the accuracy of 0.43 and specificity of 0.90. LBA-NN has recall of 0.14 while LBA has that of 0.13. Only the mean square error shows relatively larger differences between LBA-NN and LBA (0.08 versus 0.11).
 
 
 

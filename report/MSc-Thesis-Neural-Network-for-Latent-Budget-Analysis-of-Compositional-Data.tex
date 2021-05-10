@@ -126,13 +126,13 @@ proportions in the rectangular matrix is called an observed budget. LBA
 approximates the observed budgets with a mixture of latent budgets,
 where the latent budgets and the mixture weights are estimated from the
 data. LBA is usually applied to a contingency table with \(I\) groups
-(levels of the categorical explanatory variable ) and \(J\) levels of
-the response variable. LBA allows to study the dependence of the
-response variable on the categorical explanatory variable(s). However,
-in prospective studies, knowledge of the \(J\) categories of the
-response variable is usually missing and there is only information on
-the categorical explanatory variable(s). A challenge of predicting the
-\(J\) categories based on \(I\) groups is imposed. For this purpose, the
+(levels of the categorical explanatory variable) and \(J\) levels of the
+response variable. LBA allows to study the dependence of the response
+variable on the categorical explanatory variable(s). However, in
+prospective studies, knowledge of the \(J\) categories of the response
+variable is usually missing and there is only information on the
+categorical explanatory variable(s). A challenge of predicting the \(J\)
+categories based on \(I\) groups is imposed. For this purpose, the
 traditional LBA is restricted as it lacks the ability of predicting the
 response variable.
 
@@ -146,13 +146,13 @@ unconstrained NN techniques to analyse compositional data and provide
 add-ons for LBA. Two research questions are answered: (1) How can we
 equip LBA with the ability to predict the response variable based on the
 explanatory variable(s) in prospective studies? (2) Can we achieve a
-higher accuracy with the new, unconstrained NN-based version of LBA than
-with the constrained NN extension of LBA?
+better prediction ability with the new, unconstrained NN-based version
+of LBA than with the constrained NN extension of LBA?
 
 In the remainder of this paper, in Section \ref{sec:bg}, we explain LBA
 and the extension proposed by Siciliano and Mooijaart. In Section
 \ref{sec:method}, an unconstrained NN extension of LBA, LBA-NN, is
-proposed for analyzing and predicting compositional data. We shed light
+proposed for analysing and predicting compositional data. We shed light
 on using the importance table and plot that show the relative importance
 of all explanatory variables on the response variable to obtain a stable
 interpretation of LBA-NN. The LBA-NN-K-means approach that applies
@@ -277,7 +277,7 @@ LBA}\label{subsection:prelba}}
 A multi-layer perceptron neural network model refers to a type of
 feedforward neural network, including an input layer, one or more hidden
 layers and an output layer. Each piece of data from one subject passes
-through the layers in a one-directional way. Each layer composes of one
+through the layers in a one-directional way. Each layer is comprises one
 or more neurons. Different layers are connected by assigned weights
 between the neurons.
 
@@ -554,8 +554,8 @@ variable(s) on each of the \(J\) categories. To compare LBA-NN and LBA,
 importance table to find \(K\) clusters based on the abovementioned
 contribution patterns. We call this approach the LBA-NN-K-means
 approach. The \(K\) clusters are comparable to \(K\) latent budgets in
-LBA. Lastly, the results of LBA-NN-K-means are visualized in a biplot
-\citep{gabriel1971}, where \(I\) categories of the explanatory
+LBA. Lastly, the results of LBA-NN-K-means approach are visualized in a
+biplot \citep{gabriel1971}, where \(I\) categories of the explanatory
 variable(s) are shown as inverted triangles and \(J\) categories of the
 response variable as points.
 
@@ -646,15 +646,14 @@ budgets are predefined in LBA.
 The estimated LBA-parameters are shown in Table \ref{tab:lbaex1}. In the
 first latent budget, the mixing parameters of \(P\) valued 2
 (\(\alpha_{k=1|P=2}\)), 3 (\(\alpha_{k=1|P=3}\)) and 4
-(\(\alpha_{k=1|P=4}\)) are higher than the corresponding budget
+(\(\alpha_{k=1|P=4}\)) are larger than the corresponding budget
 proportion. The latent budget parameters of \(Y\) valued 2
-(\(\beta_{Y=2|k=1}\)) and 3 (\(\beta_{Y=3|k=1}\)) are higher than the
+(\(\beta_{Y=2|k=1}\)) and 3 (\(\beta_{Y=3|k=1}\)) are larger than the
 corresponding marginal probabilities (\(p_{+j}\)). Thus, the first
 latent budget is used more than average by \(P\) valued 2, 3 and 4 and
-has elements \(Y\) valued 2 and 3 that are larger than average.
-Likewise, the second latent budget is used more than average by \(P\)
-valued 5 and 6 and \(Y\) valued 3 and 4. The third latent budget
-consists of \(P\) valued 1 and 2 and \(Y\) valued 1.
+\(Y\) valued 2 and 3. Likewise, the second latent budget is used more
+than average by \(P\) valued 5 and 6 and \(Y\) valued 3 and 4. The third
+latent budget consists of \(P\) valued 1 and 2 and \(Y\) valued 1.
 
 \begin{table}[H]
 
@@ -682,18 +681,19 @@ consists of \(P\) valued 1 and 2 and \(Y\) valued 1.
 \end{tabular}
 \end{table}
 
-The corresponding qualitative evaluation of LBA-NN is shown in an
-importance plot in Figure \ref{fig:impex1}. As in the upper-left panel,
-\(P\) valued 1 has the largest impact on the \(Y\) valued 1. Similarly,
-it can be concluded that \(Y\) valued 2 is mostly related to \(P\)
-valued 2 and 3; \(Y\) valued 3 is mostly related to \(P\) valued 4;
-\(Y\) valued 4 is mostly related to \(P\) valued 6. The biplot derived
-from the importance table is shown in Figure \ref{fig:bipex1}. Note that
-three clusters were predefined so as to compare with LBA (with three
-latent budgets) on the same level. The first cluster is characterized by
-\(P\) valued 1 to 3 and \(Y\) valued 1 and 2. The second one is mainly
-for \(P\) valued 4 and \(Y\) valued 3. The \(P\) valued 5 and 6 and
-\(Y\) valued 4 belong to the third cluster.
+The corresponding qualitative evaluation of LBA-NN is shown in the
+importance plots in Figure \ref{fig:impex1}. As in the upper-left panel,
+\(P\) valued 1 has the largest impact on \(Y\) valued 1 as the relative
+importance, \(Imp_{P=1;Y=1}\), shows the highest value. Similarly, it
+can be concluded that \(Y\) valued 2 is mostly related to \(P\) valued 2
+and 3; \(Y\) valued 3 is mostly related to \(P\) valued 4; \(Y\) valued
+4 is mostly related to \(P\) valued 6. The biplot derived from the
+importance table is shown in Figure \ref{fig:bipex1}. Note that three
+clusters were predefined so as to compare with LBA (with three latent
+budgets) on the same level. The first cluster is characterized by \(P\)
+valued 1 to 3 and \(Y\) valued 1 and 2. The second one is mainly for
+\(P\) valued 4 and \(Y\) valued 3. The \(P\) valued 5 and 6 and \(Y\)
+valued 4 belong to the third cluster.
 
 \begin{figure}[H]
 \centering
@@ -713,9 +713,11 @@ the test data to compare their prediction abilities. The confusion
 matrices of the predictions from both models are shown in Figure
 \ref{fig:5}. As depicted in Figure \ref{fig:5b}, LBA misclassified \(Y\)
 class of 3 to the \(Y\) classes of 2 and 4. The quantitative indicators
-are summarized in Table \ref{tab:sumex1}. The indicators including
-accuracy, recall and specificity from LBA-NN are all higher than LBA,
-indicating better performance.
+are summarized in Table \ref{tab:sumex1}. The accuracy (0.79 versus
+0.64), recall (0.81 versus 0.69) and specificity (0.93 versus 0.88) from
+LBA-NN are all higher than that from LBA. The mean square error from
+LBA-NN is lower than the counterpart from LBA (0.07 versus 0.11). All
+indicators imply a better performance in LBA-NN.
 
 \begin{figure}[H]
 \subfigure[\label{fig:5a}]{\includegraphics[width = 7cm]{figure/5a_confusion_matrix_lbann.png}}
@@ -744,7 +746,7 @@ indicating better performance.
 \begin{tablenotes}
 \small
 \item \textit{Note: } 
-\item Recall is also named as sensitivity. Since LBA failed to predict one of the class (i.e., class 3), the precision and f1-score for LBA are NA.
+\item Recall is also named as sensitivity. Since LBA failed to predict one of the classes (i.e., class 3), the precision and f1-score for LBA are NA.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -767,6 +769,7 @@ activations for the hidden and output layer, learning rate of
 
 \caption{\label{tab:tabex2}The contingency table for the example data 2}
 \centering
+\begin{threeparttable}
 \begin{tabular}[t]{lcccccccccc}
 \toprule
 \multicolumn{1}{c}{\textbf{ }} & \multicolumn{10}{c}{\textbf{Class}} \\
@@ -786,6 +789,12 @@ V5-0 & 4 & 33 & 8 & 55 & 47 & 50 & 5 & 51 & 6 & 43\\
 V5-1 & 41 & 4 & 43 & 2 & 5 & 2 & 42 & 6 & 47 & 6\\
 \bottomrule
 \end{tabular}
+\begin{tablenotes}
+\small
+\item \textit{Note: } 
+\item ``V1-0": the LED shows negativity (valued 0) for feature V1; ``V1-1": the LED shows positivity (valued 1) for feature V1, and so on.
+\end{tablenotes}
+\end{threeparttable}
 \end{table}
 
 The estimated parameters from LBA are shown in Table \ref{tab:lbaex2}.
@@ -837,12 +846,17 @@ V5-1 & 0.72 & 0.00 & 0.25 & 0.00 & 0.02 & 0.00 & 0.00 & 0.01 & \\
 \end{tabular}}
 \end{table}
 
-The corresponding qualitative evaluation of LBA-NN is shown in an
-importance plot in Figure \ref{fig:impex2}. For LBA-NN, we interpreted
-the importance plot by comparing the relative importance of both
+The corresponding qualitative evaluation of LBA-NN is shown in the
+importance plots in Figure \ref{fig:impex2}. For LBA-NN, we interprete
+the importance plots by comparing the relative importance of both
 categories in the same explanatory variable. As in the first panel, the
-class 1 LED lights have all the features except feature V4. While the
-class 9 LED lights tend to have all the features ranging from V1 to V5.
+class 1 LED lights tend to have all the features except feature V4 as
+for all five explanatory variables, only \(Imp_{V4=0;class=1}\) is
+greater than \(Imp_{V4=1;class=1}\). While the class 9 LED lights tend
+to have all the features ranging from V1 to V5, indicated by the
+relative importance of all explanatory variables showing positivity is
+greater than that of the variables showing negativity
+(\(Imp_{Vm=1;class=9} > Imp_{Vm=0;class=9} \text{ for all } m \in \{1, ...,5\}\)).
 The biplot derived from the importance table is shown in Figure
 \ref{fig:bipex2}. Note that eight clusters were predefined so as to
 compare with LBA (with eight latent budgets) on the same level. Cluster
@@ -870,9 +884,11 @@ the test data to compare their prediction abilities. The confusion
 matrices of the predictions from both models are shown in Figure
 \ref{fig:8}. As depicted in Figure \ref{fig:8b}, LBA failed to predict
 the LED lights of class 2 and 10. The quantitative indicators are
-summarized in Table \ref{tab:sumex2}. The indicators including accuracy,
-recall and specificity from LBA-NN are all higher than LBA, indicating
-better performance.
+summarized in Table \ref{tab:sumex2}. The accuracy (0.73 versus 0.55),
+recall (0.74 versus 0.56) and specificity (0.97 versus 0.95) from LBA-NN
+are all higher than that from LBA. The mean square error from LBA-NN is
+lower than the counterpart from LBA (0.06 versus 0.23). All indicators
+imply a better performance in LBA-NN.
 
 \begin{figure}[H]
 \subfigure[\label{fig:8a}]{\includegraphics[width = 7cm]{figure/8a_confusion_matrix_lbann.png}}
@@ -901,7 +917,7 @@ better performance.
 \begin{tablenotes}
 \small
 \item \textit{Note: } 
-\item Recall is also named as sensitivity. Since LBA failed to predict one of the classes (i.e., class 2 \& 10), the precision and f1-score for LBA are NA. 
+\item Recall is also named as sensitivity. Since LBA failed to predict one of the classes (i.e., class 2 and 10), the precision and f1-score for LBA are NA. 
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -913,7 +929,7 @@ In this study, we propose a new model for the compositional data,
 LBA-NN. The model is based on the idea of LBA and the framework of NN.
 In addition, we provide an R function, \textsf{lbann}, to establish
 LBA-NN with different number of hidden neurons and activation functions.
-One of the advantages of this study is that users are allowed to
+One of the advantages of this function is that users are allowed to
 manually change the configurations to avoid technical issues, such as
 overfitting. To obtain the optimal hyperparameters for LBA-NN, it is
 also recommended to use grid search. Compared to the package
@@ -945,15 +961,15 @@ lights of class 1 and 9 are included in cluster 4 from LBA-NN as well as
 latent budget 1 from LBA.
 
 In terms of differences between two models, LBA is likely to include the
-same category of the response variable in several latent budgets whereas
-the clusters in LBA-NN are mutually exclusive with regard to categories
-of the response variable. On one hand, the classification in LBA can
-enrich the interpretation. On the other hand, it can bring challenges in
-decision making, resulting in poor prediction. The main drawback of
-LBA-NN is that it cannot yield straightforward parameters, such as the
-mixing parameters and latent budget parameters in LBA. Nevertheless,
-with the aid of the relative importance, we provide a stable strategy to
-interpret LBA-NN.
+same category of the response variable in different latent budgets
+whereas the clusters in LBA-NN are mutually exclusive with regard to
+categories of the response variable. On one hand, the classification in
+LBA can enrich the interpretation. On the other hand, it can bring
+challenges in decision making, resulting in poor prediction. The main
+drawback of LBA-NN is that it cannot yield straightforward parameters,
+such as the mixing parameters and latent budget parameters in LBA.
+Nevertheless, with the aid of the relative importance, we provide a
+stable strategy to interpret LBA-NN.
 
 By answering the two research questions, it is convinced that LBA-NN, in
 a nutshell, is able to produce more accurate predictions as well as
