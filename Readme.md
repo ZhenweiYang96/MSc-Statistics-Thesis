@@ -26,5 +26,7 @@ The entire research archive is available through [https://github.com/ZhenweiYang
 
 The R package `lbann` mentioned in the thesis can be find on [https://github.com/ZhenweiYang96/lbann](https://github.com/ZhenweiYang96/lbann). If you want to use that, please use the following code:
 
-``library(devtools)
-devtools::install_github("https://github.com/ZhenweiYang96/lbann")``
+```R
+library(devtools)
+devtools::install_github("https://github.com/ZhenweiYang96/lbann")
+```
