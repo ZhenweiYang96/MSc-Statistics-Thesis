@@ -25,5 +25,6 @@ The latter folder is for compiling the thesis and supplementary materials based 
 The entire research archive is available through [https://github.com/ZhenweiYang96/MSc-Statistics-Thesis](https://github.com/ZhenweiYang96/MSc-Statistics-Thesis). The Github repository is public, and therefore completely 'open access'. The data will be stored for a minimal duration of ten years.
 
 The R package `lbann` mentioned in the thesis can be find on [https://github.com/ZhenweiYang96/lbann](https://github.com/ZhenweiYang96/lbann). If you want to use that, please use the following code:
+
 ``library(devtools)
 devtools::install_github("https://github.com/ZhenweiYang96/lbann")``
