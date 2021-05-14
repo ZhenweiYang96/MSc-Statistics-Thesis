@@ -38,7 +38,7 @@ Directory of Files:	"Data/"
 
 Directory of Files:	"Script/"
    A. Filename:        1. Generating Data.R
-      Short description:        Generate Example data 1 ("data_1.csv"), see supplementary materials for details.
+      Short description:        Generate Example data 1 ("data_1.csv"), see supplementary materials for details. And split the data into a training and a test set.
 
         
 
@@ -48,7 +48,7 @@ Directory of Files:	"Script/"
 
         
    C. Filename:        3. Example 1_LBA.R
-      Short description:	Implement LBA-NN on example 1. Can yield (in "Output/"): (1) tab3_contingency_table_example1.csv; (2) tab4_1_mixing parameters A.csv; (3) tab4_2_latent budgets B.csv; (4) fig5b_confusion_matrix_lba.png; (5) tab5_2_summary_prediction_lba.csv
+      Short description:	Implement LBA on example 1. Can yield (in "Output/"): (1) tab3_contingency_table_example1.csv; (2) tab4_1_mixing parameters A.csv; (3) tab4_2_latent budgets B.csv; (4) fig5b_confusion_matrix_lba.png; (5) tab5_2_summary_prediction_lba.csv
 
 
 

@@ -44,7 +44,7 @@ Directory of Files:	"Data/"
 
 Directory of Files:	"Script/"
    A. Filename:        1. Preprocessing led data.R
-      Short description:        Preprocess the raw Example data 2 ("phpSj3fWL.csv") and yield "data_2.csv"
+      Short description:        Preprocess the raw Example data 2 ("phpSj3fWL.csv"), yield "data_2.csv" and split the data into a training and a test set.
 
         
    B. Filename:        2. Example 2_LBA_NN.R
@@ -53,7 +53,7 @@ Directory of Files:	"Script/"
 
         
    C. Filename:        3. Example 2_LBA.R
-      Short description:	Implement LBA-NN on example 2. Can yield (in "Output/"): (1) tab6_contingency_table_example2.csv; (2) tab7_1_mixing parameters A.csv; (3) tab7_2_latent budgets B.csv; (4) fig8b_confusion_matrix_lba.png; (5) tab8_2_summary_prediction_lba.csv
+      Short description:	Implement LBA on example 2. Can yield (in "Output/"): (1) tab6_contingency_table_example2.csv; (2) tab7_1_mixing parameters A.csv; (3) tab7_2_latent budgets B.csv; (4) fig8b_confusion_matrix_lba.png; (5) tab8_2_summary_prediction_lba.csv
 
 
 
