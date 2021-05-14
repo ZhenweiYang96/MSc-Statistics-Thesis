@@ -28,7 +28,6 @@ Folders:	Data Archive for the data and scripts involved in the project
       Short description:        Experiment 2 includes a public LED dataset with five explanatory variables (https://www.openml.org/d/40496). The dataset were split into a training dataset (500 subjects) and a test dataset (100 subjects). LBA-NN and LBA were implemented on the datasets to compare with each other quantitatively and qualitatively.
 
 
-
         
    C. Foldername:    Experiment 3    
       Short description:	Experiment 3 includes a previously used German Suicide data with two explanatory variables (Van der Heijden, Mooijaart, and De Leeuw 1992). The dataset were split into a training dataset (43211 subjects) and a test dataset (10000 subjects). LBA-NN and LBA were implemented on the datasets to compare with each other quantitatively and qualitatively.

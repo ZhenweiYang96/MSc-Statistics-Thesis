@@ -2,7 +2,7 @@
 GENERAL INFORMATION
 -------------------
 
-1. Title: Data Archive for the MSc Thesis 'Neural Networks for Latent Budget Analysis of Compositional Data'
+1. Title: Experiment 3 for the supplementary materials of the MSc Thesis 'Neural Networks for Latent Budget Analysis of Compositional Data'
 
 2. Author Information
     
@@ -19,9 +19,6 @@ Netherlands
 DATA & FILE OVERVIEW
 ---------------------
 
-#
-# Directory of Files in Data Archive: three experiments involved 
-#
 
 Directory of Files:	"Data/"
    A. Filename:        data_3.csv
@@ -30,12 +27,12 @@ Directory of Files:	"Data/"
 
         
    B. Filename:        testdata_3.csv
-      Short description:        The test dataset from Example 3 (10000 observations)
+      Short description:        The test dataset for Example 3 (10000 observations)
 
 
         
    C. Filename:        traindata_3.csv
-      Short description:	The training dataset from Example 3 (43211 observations)
+      Short description:	The training dataset for Example 3 (43211 observations)
 
 
 
@@ -63,8 +60,7 @@ Directory of Files:	"Script/"
 
 
    E. Foldername:	Supplementary materials_hyperparameter optimization
-      Short description:	Used to choose the hyperparameters in LBA-NN. (1) hyperparameter optimization: optimize the hyperparameters automatically; (2) tuning setting: set up the model and initial weights
-
+      Short description:	Used to choose the hyperparameters in LBA-NN. (1) hyperparameter optimization: optimize the hyperparameters automatically; (2) tuning setting: set up the model and initial hyperparameters
 
 
 

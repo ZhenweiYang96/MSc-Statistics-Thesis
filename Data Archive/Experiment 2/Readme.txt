@@ -2,7 +2,7 @@
 GENERAL INFORMATION
 -------------------
 
-1. Title: Data Archive for the MSc Thesis 'Neural Networks for Latent Budget Analysis of Compositional Data'
+1. Title: Experiment 2 for the MSc Thesis 'Neural Networks for Latent Budget Analysis of Compositional Data'
 
 2. Author Information
     
@@ -19,13 +19,10 @@ Netherlands
 DATA & FILE OVERVIEW
 ---------------------
 
-#
-# Directory of Files in Data Archive: three experiments involved 
-#
 
 Directory of Files:	"Data/"
    A. Filename:        data_2.csv
-      Short description:        Example data 2, a public LED data preprocessed by 1. Preprocessing led data.R (See "Script/"). In total, 500 observations with five binary variables V1 - V7 (only V1 - V5 are used in this study), Class (response variable, led classes with 10 categories).
+      Short description:        Example data 2, a public LED data preprocessed by 1. Preprocessing led data.R (See "Script/"). In total, 500 observations with seven binary variables V1 - V7 (only V1 - V5 are used in this study), Class (the response variable, led classes with 10 categories).
 
 
 
@@ -40,8 +37,7 @@ Directory of Files:	"Data/"
 
         
    D. Filename:        traindata_2.csv
-      Short description:	The training dataset from Example 1 (800 observations)
-
+      Short description:	The training dataset from Example 1 (400 observations)
 
 
 
@@ -67,8 +63,7 @@ Directory of Files:	"Script/"
 
 
    E. Foldername:	Supplementary materials_hyperparameter optimization
-      Short description:	Used to choose the hyperparameters in LBA-NN. (1) hyperparameter optimization: optimize the hyperparameters automatically; (2) tuning setting: set up the model and initial weights
-
+      Short description:	Used to choose the hyperparameters in LBA-NN. (1) hyperparameter optimization: optimize the hyperparameters automatically; (2) tuning setting: set up the model and initial hyperparameters
 
 
 
@@ -94,7 +89,7 @@ Directory of Files:	"Output/"
 
 
    E. Filename:		tab6_contingency_table_example2.csv
-      Short description:	Table 6: The summary table for data_2.csv
+      Short description:	Table 6: The summary table for "data_2.csv"
 
 
 

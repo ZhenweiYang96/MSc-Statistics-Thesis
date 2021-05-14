@@ -8,7 +8,7 @@ Compositional data are non-negative data collected in a rectangular matrix with 
 
 ## Contents
 
-The thesis report is named `MSc Thesis Z. Yang.pdf` and the supplementary materials are also attached, named as `Supplementary-materials.pdf`.
+The thesis report is named `MSc Thesis Z. Yang.pdf` and the supplementary materials are also attached, named as `Supplementary-materials.pdf`. The thesis and data usage is approved by the FETC (Utrecht University) in `ethical approval.pdf`.
 
 Besides, the repository contains two folders `Data Archive` and `report`. 
 
@@ -16,7 +16,7 @@ The former folder serves as a research archive where data and outputs for the th
 
 - `Data` | Contains the (raw) data, training dataset, test dataset.
 - `Script` | Contains the R scripts for preprocessing (or data generating), Implementation of LBA-NN on example, Implementation of LBA on example and involved functions. Additionally, there is also a folder, `Supplementary materials_hyperparameter optimization` which is used to find the optimal hyperparameter for LBA-NN.
-- `Output` | Contains the yielded figures or tables that are used in the thesis, namely: contigency table, LBA outputs, importance plots, biplot, confusion matrices and summary of performance.
+- `Output` | Contains the yielded figures or tables that are used in the thesis, namely: contingency table, LBA outputs, importance plots, biplot, confusion matrices and summary of performance.
 
 The latter folder is for compiling the thesis and supplementary materials based on the yielded figures and tables.
 
