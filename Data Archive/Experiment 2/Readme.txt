@@ -123,7 +123,7 @@ METHODOLOGICAL INFORMATION
 
 Name:	lbann
 Version:	1.0
-System Requirements:	R
+Software Requirements:	R
 Open Source? (Y/N): 	Y
 
 (if available and applicable)
